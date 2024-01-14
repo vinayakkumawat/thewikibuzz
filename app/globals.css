@@ -74,3 +74,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .padding-container {
+    @apply px-16 py-4;
+  }
+}
