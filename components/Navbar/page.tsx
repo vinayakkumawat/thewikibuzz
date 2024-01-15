@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, HamburgerMenuIcon } from '@radix-ui/react-icons'
+import { GitHubLogoIcon, HamburgerMenuIcon, InstagramLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
 import { NAV_LINKS } from "@/components/Navbar/constants"
 import Link from "next/link"
 import { Button } from "../ui/button"
@@ -37,11 +37,18 @@ const Navbar = () => {
                 <Sheet>
                     <SheetTrigger><HamburgerMenuIcon className='h-6 w-6' /></SheetTrigger>
                     <SheetContent>
-                        <SheetHeader>
-                            <SheetTitle>Are you absolutely sure?</SheetTitle>
+                        <SheetHeader className='text-left'>
+                            <SheetTitle>
+                                <ul className='flex flex-col'>
+                                    {NAV_LINKS.map((link) => (
+                                        <Link href={link.href} key={link.key}>
+                                            <Button variant="link">{link.label}</Button>
+                                        </Link>
+                                    ))}
+                                </ul>
+                            </SheetTitle>
                             <SheetDescription>
-                                This action cannot be undone. This will permanently delete your account
-                                and remove your data from our servers.
+                                <span className='fixed bottom-6'><Link href={"/"}>@Wikibuzz</Link> - What I Know Is Buzz</span>
                             </SheetDescription>
                         </SheetHeader>
                     </SheetContent>
