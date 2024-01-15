@@ -1,5 +1,5 @@
 import { GitHubLogoIcon, HamburgerMenuIcon } from '@radix-ui/react-icons'
-import { NAV_LINKS } from "@/constants"
+import { NAV_LINKS } from "@/components/Navbar/constants"
 import Link from "next/link"
 import { Button } from "../ui/button"
 import {
@@ -11,7 +11,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 
-const Navebar = () => {
+const Navbar = () => {
     return (
         <nav className='flexBetween padding-container border-b'>
             <Link href={"/"}>
@@ -52,4 +52,4 @@ const Navebar = () => {
     )
 }
 
-export default Navebar
+export default Navbar
