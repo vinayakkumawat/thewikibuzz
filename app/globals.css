@@ -92,6 +92,10 @@
     @apply px-6 py-4 sm:px-12 lg:px-16;
   }
 
+  .margin-container {
+    @apply mx-6 my-4 sm:mx-12 lg:mx-16;
+  }
+
   /* Font */
 }
 

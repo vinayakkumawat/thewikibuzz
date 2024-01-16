@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar/page";
+import Newsletter from "@/components/Newsletter/page";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
           <h2 className="font-bold text-5xl lg:text-7xl text-background bg-foreground px-4 py-2">BUZZ</h2>
         </div>
       </section>
+
+      <Newsletter />
     </>
   )
 }
