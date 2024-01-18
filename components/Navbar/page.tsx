@@ -48,7 +48,7 @@ const Navbar = () => {
                                 </ul>
                             </SheetTitle>
                             <SheetDescription>
-                                <span className='fixed bottom-6'><Link href={"/"}>@Wikibuzz</Link></span>
+                                <span className='fixed bottom-6'><Link href={"/"}>@Wikibuzz</Link> - What I Know Is Buzz</span>
                             </SheetDescription>
                         </SheetHeader>
                     </SheetContent>
