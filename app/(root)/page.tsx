@@ -4,7 +4,7 @@ import Newsletter from "@/components/Newsletter/page";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className="relative h-[50vh] w-screen border-b overflow-hidden text-center">
         <div className="absolute left-0 w-full h-full bg-[url('/assets/grid-bg.svg')] bg-cover bg-center opacity-40"></div>
@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   )
 }
