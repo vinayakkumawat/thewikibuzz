@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Wikibuzz - What I Know Is Buzz',
-  description: 'Experience the buzz of innovation as you navigate a toolkit that adapts to your needs. Elevate your projects with Wikibuzz, Where Tools Meet Transformation.',
+  description: 'Experience the buzz of innovation as you navigate a toolkit that adapts to your needs.',
 }
 
 export default function RootLayout({
